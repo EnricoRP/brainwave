@@ -33,6 +33,12 @@ Mendefinisikan warna atau konfigurasi general untuk beberapa komponen
 
 🔹Settings index.css
 🔹Pembuatan komponen Button.jsx
+🔹Pembuatan komponen Header.jsx
+
+## 🔹Instalasi scroll-lock
+- Penambahan package untuk mengunci layar ketika dalam mode mobile dan membuka menu tidak dapat melakukan scrolling.
+    `npm install scroll-lock` 
+##
 
 # 
 
@@ -43,6 +49,11 @@ Mendefinisikan warna atau konfigurasi general untuk beberapa komponen
 ##
 ## 📅 7 April 2025 3:44 PM
     Pembuatan komponen Header.jsx yang dinamis yang memanfaatkan brainwave asset sebagai icon yang juga berfungsi sebagai link ke pusat, serta iteration dari constans file index.js untuk render navigation dan penggunakan useLocation dari react-router-dom untuk mengetahui link mana yang sedang aktif.
+##
+## 📅 7 April 2025 4:24 PM
+- Pengembangan komponen Header.jsx agar dapat responsive pada Dekstop & Mobile. 
+- Penggunaan komponen MenuSvg, HamburgerMenu untuk trigger menu ketika dalam mode Mobile. 
+- Penggunaan useState untuk implementasi trigger open close drawer menu Mobile
 ##
 # 
 
