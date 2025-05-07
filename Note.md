@@ -39,7 +39,10 @@ Mendefinisikan warna atau konfigurasi general untuk beberapa komponen
 📅 Catatan Harian
 #
 ## 📅 7 April 2025 2:38 PM
-    Ternyata komponen bisa sangat flesibel dengan cara mendefinisikan komponen dengan sub function yang nanti ketika di render bisa memanfaatkan ternary operator. Contoh ada di Button.jsx.
-
+    Ternyata komponen bisa sangat flesibel dengan cara mendefinisikan komponen dengan sub function yang nanti ketika di render bisa memanfaatkan ternary operator. Contoh ada di Button.jsx
+##
+## 📅 7 April 2025 3:44 PM
+    Pembuatan komponen Header.jsx yang dinamis yang memanfaatkan brainwave asset sebagai icon yang juga berfungsi sebagai link ke pusat, serta iteration dari constans file index.js untuk render navigation dan penggunakan useLocation dari react-router-dom untuk mengetahui link mana yang sedang aktif.
+##
 # 
 
