@@ -32,10 +32,14 @@ Mendefinisikan warna atau konfigurasi general untuk beberapa komponen
 ##
 
 🔹Settings index.css
+🔹Pembuatan komponen Button.jsx
 
+# 
 
-
+📅 Catatan Harian
 #
-Customer 
- 📅 Catatan Harian
-    2025-05-06
+## 📅 7 April 2025 2:38 PM
+    Ternyata komponen bisa sangat flesibel dengan cara mendefinisikan komponen dengan sub function yang nanti ketika di render bisa memanfaatkan ternary operator. Contoh ada di Button.jsx.
+
+# 
+
