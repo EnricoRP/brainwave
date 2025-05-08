@@ -5,15 +5,15 @@ import Section from './Section';
 const Hero = () => {
     return (
         <Section
-            className='pt-[12rem] -mt-[5.25]'
+            className='pt-[12rem] -mt-[5.25rem]'
             crosses
-            crossesOffset="lg:translate-y-[5.25rem]"
+            crossesOffset="lg:translate-y-[0.1rem]"
             customPaddings
             id="hero">
             <div className="container relative">
-                <div className="relative z-1 max-2-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb:[6rem]">
+                <div className="relative pt-[4rem] md:pt-[7rem] z-1 max-2-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb:[6rem]">
                     <h1 className="h1 mb-6">
-                        Explore the Possibilities of AI Chatting with
+                        Explore the Possibilities <br/> of AI Chatting with&nbsp;
                         <span className="inline-block relative">
                             Brainwave
                             <img
@@ -24,7 +24,7 @@ const Hero = () => {
                                 alt='Curve' />
                         </span>
                     </h1>
-                    <p className='body-1 mx-2-3xl mx-auto mb-6 text-n-2 lg:mb-8'>Unleash the power of AI within Brainwave. Upgrade your productivity with Brainwave, the open AI chat app.</p>
+                    <p className='body-1 mx-2-3xl mx-auto mb-6 text-n-2 lg:mb-8'>Unleash the power of AI within Brainwave. Upgrade your productivity with <br/> Brainwave, the open AI chat app.</p>
                     <Button href="/pricing">
                         Get Started
                     </Button>
@@ -36,7 +36,7 @@ const Hero = () => {
                             <div className='aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]'>
                                 <img
                                     src={robot}
-                                    className='w-full'
+                                    className='w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]'
                                     width={1024}
                                     height={490}
                                     alt='AI'
@@ -44,7 +44,7 @@ const Hero = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2">
+                    <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
                         <img 
                         src={heroBackground}
                         className='w-full'
