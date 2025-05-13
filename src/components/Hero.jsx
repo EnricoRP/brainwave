@@ -1,7 +1,8 @@
 import { curve, heroBackground, robot } from '../assets';
 import Button from './Button';
-import Section from './Section';
-
+import Section from './Section'; 
+import { heroIcons } from '../constans';
+import { ScrollParallax } from 'react-just-parallax';
 const Hero = () => {
     return (
         <Section
@@ -13,7 +14,7 @@ const Hero = () => {
             <div className="container relative">
                 <div className="relative pt-[4rem] md:pt-[7rem] z-1 max-2-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb:[6rem]">
                     <h1 className="h1 mb-6">
-                        Explore the Possibilities <br/> of AI Chatting with&nbsp;
+                        Explore the Possibilities <br /> of AI Chatting with&nbsp;
                         <span className="inline-block relative">
                             Brainwave
                             <img
@@ -24,7 +25,7 @@ const Hero = () => {
                                 alt='Curve' />
                         </span>
                     </h1>
-                    <p className='body-1 mx-2-3xl mx-auto mb-6 text-n-2 lg:mb-8'>Unleash the power of AI within Brainwave. Upgrade your productivity with <br/> Brainwave, the open AI chat app.</p>
+                    <p className='body-1 mx-2-3xl mx-auto mb-6 text-n-2 lg:mb-8'>Unleash the power of AI within Brainwave. Upgrade your productivity with <br /> Brainwave, the open AI chat app.</p>
                     <Button href="/pricing">
                         Get Started
                     </Button>
@@ -41,16 +42,30 @@ const Hero = () => {
                                     height={490}
                                     alt='AI'
                                 />
+
+                                <ScrollParallax isAbsolutelyPositioned>
+                                    <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
+                                        {heroIcons.map((icon, index) => (
+                                            <li className="p-5" key={index}>
+                                                <img
+                                                    src={icon} width={24} height={25} alt={icon}
+                                                />
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </ScrollParallax>
+
+
                             </div>
                         </div>
                     </div>
                     <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
-                        <img 
-                        src={heroBackground}
-                        className='w-full'
-                        width={1440}
-                        height={1800}
-                        alt='heroBackground'
+                        <img
+                            src={heroBackground}
+                            className='w-full'
+                            width={1440}
+                            height={1800}
+                            alt='heroBackground'
                         />
                     </div>
                 </div>

@@ -40,6 +40,11 @@ Mendefinisikan warna atau konfigurasi general untuk beberapa komponen
     `npm install scroll-lock` 
 ##
 
+## 🔹Instalasi parallax
+- Penambahan package untuk efek paralax ketika scrolling komponen tertentu
+    `npm install react-just-parallax` 
+##
+
 # 
 
 📅 Catatan Harian
