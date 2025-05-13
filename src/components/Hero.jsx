@@ -1,9 +1,12 @@
 import { curve, heroBackground, robot } from '../assets';
 import Button from './Button';
 import Section from './Section'; 
+import { BackgroundCircles, BottomLine, Gradient } from './design/Hero';
 import { heroIcons } from '../constans';
 import { ScrollParallax } from 'react-just-parallax';
+import { useRef } from 'react';
 const Hero = () => {
+    const parallaxRef = useRef(null)
     return (
         <Section
             className='pt-[12rem] -mt-[5.25rem]'
@@ -11,7 +14,7 @@ const Hero = () => {
             crossesOffset="lg:translate-y-[0.1rem]"
             customPaddings
             id="hero">
-            <div className="container relative">
+            <div className="container relative" ref={parallaxRef}>
                 <div className="relative pt-[4rem] md:pt-[7rem] z-1 max-2-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb:[6rem]">
                     <h1 className="h1 mb-6">
                         Explore the Possibilities <br /> of AI Chatting with&nbsp;
@@ -65,9 +68,11 @@ const Hero = () => {
                             className='w-full'
                             width={1440}
                             height={1800}
-                            alt='heroBackground'
+                            alt='hero'
                         />
                     </div>
+                    
+                    <BackgroundCircles/>
                 </div>
             </div>
         </Section>
