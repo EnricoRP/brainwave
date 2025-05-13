@@ -60,5 +60,6 @@ Mendefinisikan warna atau konfigurasi general untuk beberapa komponen
 - Penggunaan komponen MenuSvg, HamburgerMenu untuk trigger menu ketika dalam mode Mobile. 
 - Penggunaan useState untuk implementasi trigger open close drawer menu Mobile
 ##
+
 # 
 
