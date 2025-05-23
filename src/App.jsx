@@ -1,8 +1,9 @@
-import React from 'react' 
+import React from 'react'
 import ButtonGradient from './assets/svg/ButtonGradient'
 import Header from './components/Header'
 import Benefits from './components/Benefits'
 import Hero from './components/Hero'
+import Collaboration from './components/Collaboration'
 const App = () => {
   return (
     <>
@@ -10,6 +11,7 @@ const App = () => {
         <Header />
         <Hero />
         <Benefits />
+        <Collaboration />
       </div>
       <ButtonGradient />
     </>
